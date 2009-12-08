@@ -1,3 +1,4 @@
+/* $Id$ */
 // Copyright (C) 2000, International Business Machines
 // Corporation and others.  All Rights Reserved.
 #ifndef CoinError_H
@@ -94,16 +95,16 @@ public:
   //@{
     /// Alternate Constructor 
     CoinError ( 
-      std::string message, 
-      std::string methodName, 
-      std::string className,
-      std::string fileName = std::string(),
+      std::string message__, 
+      std::string methodName__, 
+      std::string className__,
+      std::string fileName_ = std::string(),
       int line = -1)
       :
-      message_(message),
-      method_(methodName),
-      class_(className),
-      file_(fileName),
+      message_(message__),
+      method_(methodName__),
+      class_(className__),
+      file_(fileName_),
       lineNumber_(line)
     {
       print(printErrors_);

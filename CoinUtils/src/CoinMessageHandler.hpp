@@ -1,3 +1,4 @@
+/* $Id$ */
 // Copyright (C) 2002, International Business Machines
 // Corporation and others.  All Rights Reserved.
 #ifndef CoinMessageHandler_H
@@ -166,8 +167,8 @@ public:
   inline Language language() const
   {return language_;}
   /** Set language */
-  void setLanguage(Language language)
-  {language_ = language;}
+  void setLanguage(Language newlanguage)
+  {language_ = newlanguage;}
   /// Change detail level for one message
   void setDetailMessage(int newLevel, int messageNumber);
   /** \brief Change detail level for several messages
